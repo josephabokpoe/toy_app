@@ -1,0 +1,28 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+    <%= @micropost.inspect %>
+</p>
+
+<p>
+  <strong>Content:</strong>
+  <%= @micropost.content %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @micropost.user_id %>
+</p>
+
+<p>
+    <strong>Created at:</strong>
+    <%= @micropost.created_at %>
+</p>
+
+<p>
+    <strong>Updated at:</strong>
+    <%= @micropost.updated_at %>
+</p>
+
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>
